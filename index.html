@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
     <script src="index.js"></script>
 </head>
 <body>
@@ -133,12 +134,12 @@
                 <div class="carousel-item">
                     <img src="./assets/Carousell/4.jpeg" class="d-block w-100">
                 </div>
-                <a class="carousel-control-prev ctrl" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <img src="./assets/Carousell/arrow-left.svg" class="d-block w-100">
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <img src="./assets/Carousell/arrow-left.svg" class="d-block w-100 ctrl">
                     <span class="sr-only">Previous</span>
                   </a>
-                  <a class="carousel-control-next ctrl" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <img src="./assets/Carousell/arrow-right.svg" class="d-block w-100">
+                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <img src="./assets/Carousell/arrow-right.svg" class="d-block w-100 ctrl">
                     <span class="sr-only">Next</span>
                   </a>
             </div>
@@ -161,6 +162,176 @@
         </div>
         
     </div>
+    <div class="artikelWrapper">
+        <div class="artikelContainer">
+            <h1 class="Title" id="artikelT">ARTIKEL TERKAIT</h1>
+        <div class="pilContainer">
+            <ul class="nav nav-pills mb-3 pil" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                    aria-controls="pills-home" aria-selected="true">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+                    aria-controls="pills-profile" aria-selected="false">Profile</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+                    aria-controls="pills-contact" aria-selected="false">Contact</a>
+                </li>
+              </ul>
+        </div>
+        <div class="beritaCardsWrapper margin">
+            <div class="beritaCard">
+                <div>
+                    <div class="photoContainerWrapper">
+                        <div  class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"></div>
+                        <div class="photoContainer tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <img class="photoImage" src="./assets/Berita/camera.svg">
+                            <p class="containerDesc">5 Photos</p>
+                        </div>
+                        <div class="photoContainer tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                            <img class="photoImage" src="./assets/Berita/video.svg">
+                            <p class="containerDesc">01:45</p>
+                        </div>
+                    </div>
+                    <img class="beritaImage" src="./assets/Berita/1.jpeg" alt="Berita">
+                </div>
+                <div class="beritaText">
+                    <h3 class="beritaTitle">Sukses Finish Marathon di Jakarta, Osha Penyandang Autisme Beberkan Prosesnya</h3>
+                    <h5 class="beritaDate">Sabtu, 25 Nov 2023 20:00 WIB</h5>
+                </div>
+            </div>
+            <div class="beritaCard">
+                <div>
+                    <div class="photoContainerWrapper">
+                        <div  class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"></div>
+                        <div class="photoContainer tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <img class="photoImage" src="./assets/Berita/camera.svg">
+                            <p class="containerDesc">5 Photos</p>
+                        </div>
+                        <div class="photoContainer tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                            <img class="photoImage" src="./assets/Berita/video.svg">
+                            <p class="containerDesc">01:45</p>
+                        </div>
+                    </div>
+                    <img class="beritaImage" src="./assets/Berita/1.jpeg" alt="Berita">
+                </div>
+                <div class="beritaText">
+                    <h3 class="beritaTitle">Sukses Finish Marathon di Jakarta, Osha Penyandang Autisme Beberkan Prosesnya</h3>
+                    <h5 class="beritaDate">Sabtu, 25 Nov 2023 20:00 WIB</h5>
+                </div>
+            </div>
+            <div class="beritaCard">
+                <div>
+                    <div class="photoContainerWrapper">
+                        <div  class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"></div>
+                        <div class="photoContainer tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <img class="photoImage" src="./assets/Berita/camera.svg">
+                            <p class="containerDesc">5 Photos</p>
+                        </div>
+                        <div class="photoContainer tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                            <img class="photoImage" src="./assets/Berita/video.svg">
+                            <p class="containerDesc">01:45</p>
+                        </div>
+                    </div>
+                    <img class="beritaImage" src="./assets/Berita/1.jpeg" alt="Berita">
+                </div>
+                <div class="beritaText">
+                    <h3 class="beritaTitle">Sukses Finish Marathon di Jakarta, Osha Penyandang Autisme Beberkan Prosesnya</h3>
+                    <h5 class="beritaDate">Sabtu, 25 Nov 2023 20:00 WIB</h5>
+                </div>
+            </div>
+            <div class="beritaCard">
+                <div>
+                    <div class="photoContainerWrapper">
+                        <div  class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"></div>
+                        <div class="photoContainer tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <img class="photoImage" src="./assets/Berita/camera.svg">
+                            <p class="containerDesc">5 Photos</p>
+                        </div>
+                        <div class="photoContainer tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                            <img class="photoImage" src="./assets/Berita/video.svg">
+                            <p class="containerDesc">01:45</p>
+                        </div>
+                    </div>
+                    <img class="beritaImage" src="./assets/Berita/1.jpeg" alt="Berita">
+                </div>
+                <div class="beritaText">
+                    <h3 class="beritaTitle">Sukses Finish Marathon di Jakarta, Osha Penyandang Autisme Beberkan Prosesnya</h3>
+                    <h5 class="beritaDate">Sabtu, 25 Nov 2023 20:00 WIB</h5>
+                </div>
+            </div>
+            <div class="beritaCard">
+                <div>
+                    <div class="photoContainerWrapper">
+                        <div  class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"></div>
+                        <div class="photoContainer tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <img class="photoImage" src="./assets/Berita/camera.svg">
+                            <p class="containerDesc">5 Photos</p>
+                        </div>
+                        <div class="photoContainer tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                            <img class="photoImage" src="./assets/Berita/video.svg">
+                            <p class="containerDesc">01:45</p>
+                        </div>
+                    </div>
+                    <img class="beritaImage" src="./assets/Berita/1.jpeg" alt="Berita">
+                </div>
+                <div class="beritaText">
+                    <h3 class="beritaTitle">Sukses Finish Marathon di Jakarta, Osha Penyandang Autisme Beberkan Prosesnya</h3>
+                    <h5 class="beritaDate">Sabtu, 25 Nov 2023 20:00 WIB</h5>
+                </div>
+            </div>
+            <div class="beritaCard">
+                <div>
+                    <div class="photoContainerWrapper">
+                        <div  class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"></div>
+                        <div class="photoContainer tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <img class="photoImage" src="./assets/Berita/camera.svg">
+                            <p class="containerDesc">5 Photos</p>
+                        </div>
+                        <div class="photoContainer tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                            <img class="photoImage" src="./assets/Berita/video.svg">
+                            <p class="containerDesc">01:45</p>
+                        </div>
+                    </div>
+                    <img class="beritaImage" src="./assets/Berita/1.jpeg" alt="Berita">
+                </div>
+                <div class="beritaText">
+                    <h3 class="beritaTitle">Sukses Finish Marathon di Jakarta, Osha Penyandang Autisme Beberkan Prosesnya</h3>
+                    <h5 class="beritaDate">Sabtu, 25 Nov 2023 20:00 WIB</h5>
+                </div>
+            </div>
+           
+        </div>
+        <div class="buttonWrapper margin">
+            <button type="button" class="Button btn btn-lg" id = "aboutButton">Daftar Sekarang</a>
+        </div>
+        </div>
+        
+    </div>
+    <footer>
+        <div class="footerWrapper">
+            <img class="footerLogo" src="./assets/Hero/logo.png">
+            <div class="textWrapperFooter">
+                <p class="footerText">Event olahraga lari sejauh 10 kilometer yang diselenggarakan oleh Detikhealth secara gratis untuk masyarakat Indonesia. Ajak keluarga dan kerabat anda untuk ikut keseruan Sudirman Run 2023 lalu menangkan hadiah utama serta doorprize dengan total puluhan juta rupiah</p>
+                <div class="socmedWrapper">
+                    <h5 class="socmedText">Connect With Us</h5>
+                    <div class="socmeds">
+                        <img class="socmed" src="./assets/footer/facebook.svg">
+                        <img class="socmed" src="./assets/footer/image 31.svg">
+                        <img class="socmed" src="./assets/footer/instagram.svg">
+                        <img class="socmed" src="./assets/footer/linkedin.svg">
+                        <img class="socmed" src="./assets/footer/youtube.svg">
+                    
+                    </div>
+
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright @ 2023 detikcom. All right reserved</p>
+        </div>
+    </footer>
 </body>
 
 </html>

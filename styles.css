@@ -252,6 +252,7 @@ li>img{
     position: static;
     margin-left: 0;
     justify-content: space-between;
+    padding-bottom: 193px;
 }
 .carousel-indicators:hover{
     cursor: pointer;
@@ -267,4 +268,164 @@ li>img{
     margin: auto 52px;
     height: 60px;
     width: 60px;
+}
+.artikelWrapper{
+    margin-top: 163px;
+    width: 82vw;
+}
+#artikelT{
+    color: black;
+    width: auto;
+}
+.pil{
+    background: linear-gradient(239deg, #59FFB9 -37.86%, #326CFF 92.79%);
+    width: auto;
+    border-radius: 100px;
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    
+
+}
+.nav-link{
+    padding: 10px 20px;
+}
+.nav-link:hover{
+    color: white !important;
+}
+.nav-item>.active{
+    border-radius: 100px;
+    border: 1px solid #FFF;
+    background: rgba(255, 255, 255, 0.50) !important;
+    backdrop-filter: blur(25px);
+}
+.pilContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 54px;
+}
+.beritaImage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    aspect-ratio: 16/9;
+
+}
+.beritaTitle{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+.beritaCard{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+.beritaDate{
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.beritaCardsWrapper{
+    width: 82vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 90px;
+}
+.artikelContainer{
+    padding-bottom : 399px;
+}
+.artikelWrapper{
+    background-image: url(./assets/Berita/bg-2.png);
+    background-size: cover;
+    width: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.photoContainer{
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    backdrop-filter: blur(25px);
+    padding: 5px;
+    align-items: center;
+    gap: 10px;
+    font-size: 10px;
+    color: white;
+    float: right;
+    margin: 10px;
+    border-radius: 10px;
+
+}
+.photoContainerWrapper{
+    display: flex;
+    justify-content: end;
+}
+.photoImage{
+    height: 10px;
+}
+.containerDesc{
+    margin-bottom: 0;
+}
+.beritaCard:hover{
+    cursor: pointer;
+    color: #fc9c3c;
+}
+footer{
+    background-color: #28A997;
+    color: white;
+}
+.footerLogo{
+    width: 286px;
+    filter: brightness(0) invert(1);
+}
+.textWrapperFooter{
+    display: flex;
+}
+.footerText{
+    width: 100%;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+hr{
+    background-color: white;
+}
+.footerWrapper{
+    padding: 5vw 50px ;
+}
+.socmedWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.socmedText{
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 133.333% */
+    letter-spacing: 0.06px;
+}
+.socmed{
+    width: 32px;
+    height: 32px;
+}
+.socmeds{
+    display: flex;
+    width: 100%;
+    gap: 8px;
+}
+.socmed:hover{
+    cursor: pointer;
 }
