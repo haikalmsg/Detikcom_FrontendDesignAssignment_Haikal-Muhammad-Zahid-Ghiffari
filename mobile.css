@@ -1,0 +1,83 @@
+@media screen and (max-width: 768px) {
+   .heroContainer{
+    background-image: url(./assets/Hero/bgMobile.jpeg);
+    height: 170vh;
+    
+    
+   }
+   .heroImage{
+    width: 367px;
+    height: auto;
+   }
+   .cardsContainer{
+    display: block;
+   }
+   .maps{
+    width: 100%;
+
+   }
+   .aboutTitle{
+    font-size: 24px !important;
+    font-style: italic;
+    font-weight: 900;
+    line-height: normal;
+   }
+   .aboutSubtitle{
+    font-size: 12px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+   }
+   .aboutCard{
+    margin-bottom: 20px;
+   }
+   #SP{
+    flex-direction: column;
+   }
+   .aboutImage{
+    width: 100%;
+    height: auto;
+   }
+   .Title{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+   }
+   .aboutContainer{
+    margin-bottom: 100px;
+   }
+   .carouselWrapper{
+    margin-top: 114px;
+    margin-bottom: 84px;
+   }
+   .artikelWrapper{
+    margin-top: 0px;
+   }
+   .beritaCardsWrapper{
+    display: flex;
+    flex-direction: column;
+   }
+   .beritaCard{
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+   }
+   .beritaImage{
+    aspect-ratio: 1/1;
+    width: 133px;
+   }
+   .footerWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+   }
+   .textWrapperFooter{
+    flex-direction: column;
+    align-items: center;
+   }
+}

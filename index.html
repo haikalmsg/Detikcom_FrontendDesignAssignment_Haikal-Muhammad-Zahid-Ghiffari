@@ -6,30 +6,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mobile.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
-    <script src="index.js"></script>
 </head>
 <body>
     <nav>
-        <div class="navContainer margin">
+        <div class="navContainer margin navbar navbar-expand-lg">
             <img class="navLogo" src="./assets/Nav/Logo.png" alt="Logo">
-            <div class="navLinks">
-                <a href="#">Home</a>
-                <a href="#">Tentang Acara</a>
-                <a href="#">Galeri</a>
-                <a href="#">Berita</a>
-                <a class="navButton" id = "nav">Registrasi</a>
-            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="./assets/Nav/Category.svg">
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav navLinks">
+                    <a href="#">Home</a>
+                    <a href="#">Tentang Acara</a>
+                    <a href="#">Galeri</a>
+                    <a href="#">Berita</a>
+                    <a class="navButton" id = "nav">Registrasi</a>
+                </div>
+              </div>
+            
         </div>
     </nav>
     <div class="heroContainer">
         <img class="heroImage margin" src="./assets/Hero/logo.png" alt="Hero Image">
-        <button type="button" class="Button margin btn btn-lg" id = "heroButton">Tentang Acara</a>
+        <a class="Button margin btn btn-lg" id = "heroButton" href="#cards">Tentang Acara</a>
     </div>
-    <div class="aboutContainer margin">
+    <div class="aboutContainer margin" id = "cards">
         <div class="cardsContainer">
             <div class="aboutLeft aboutCard">
                 <img class="maps" src="./assets/About/map.jpeg" alt="Maps">
@@ -50,14 +55,14 @@
                 <div class="aboutCard" id = "SP">
                     <img class = "aboutImage" alt = "people" src = "./assets/About/ran.jpeg">
                     <div class = "SPText">
-                        <h1 class="aboutTitle">SPECIAL <br>PERFORMANCE</h1>
+                        <h1 class="aboutTitle">SPECIAL PERFORMANCE</h1>
                     <h3 class="aboutSubtitle">Saksikan penampilan dari RAN, Ayu Ting Ting, Diskoria, serta hiburan lainnya!</h3>
                     </div>
                 </div>
             </div>
         </div>
         <div class="buttonWrapper">
-            <button type="button" class="Button btn btn-lg" id = "aboutButton">Daftar Sekarang</a>
+            <button type="button" class="Button btn btn-lg" id = "aboutButton" nclick="window.open('https://event.detik.com/', '_blank')">Daftar Sekarang</a>
         </div>
     </div>
     <div class="sponsorsWrapper">
@@ -169,15 +174,15 @@
             <ul class="nav nav-pills mb-3 pil" id="pills-tab" role="tablist">
                 <li class="nav-item">
                   <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
-                    aria-controls="pills-home" aria-selected="true">Home</a>
+                    aria-controls="pills-home" aria-selected="true">Artikel</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
-                    aria-controls="pills-profile" aria-selected="false">Profile</a>
+                    aria-controls="pills-profile" aria-selected="false">Foto</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
-                    aria-controls="pills-contact" aria-selected="false">Contact</a>
+                    aria-controls="pills-contact" aria-selected="false">Video</a>
                 </li>
               </ul>
         </div>
@@ -215,11 +220,11 @@
                             <p class="containerDesc">01:45</p>
                         </div>
                     </div>
-                    <img class="beritaImage" src="./assets/Berita/1.jpeg" alt="Berita">
+                    <img class="beritaImage" src="./assets/Berita/2.jpeg" alt="Berita">
                 </div>
                 <div class="beritaText">
-                    <h3 class="beritaTitle">Sukses Finish Marathon di Jakarta, Osha Penyandang Autisme Beberkan Prosesnya</h3>
-                    <h5 class="beritaDate">Sabtu, 25 Nov 2023 20:00 WIB</h5>
+                    <h3 class="beritaTitle">Edukasi Lingkungan Hidup Bonus Sehat di 'Misi Lestari 2023: See Nature</h3>
+                    <h5 class="beritaDate">Selasa, 28 Nov 2023 07:42 WIB</h5>
                 </div>
             </div>
             <div class="beritaCard">
@@ -235,11 +240,11 @@
                             <p class="containerDesc">01:45</p>
                         </div>
                     </div>
-                    <img class="beritaImage" src="./assets/Berita/1.jpeg" alt="Berita">
+                    <img class="beritaImage" src="./assets/Berita/3.jpeg" alt="Berita">
                 </div>
                 <div class="beritaText">
-                    <h3 class="beritaTitle">Sukses Finish Marathon di Jakarta, Osha Penyandang Autisme Beberkan Prosesnya</h3>
-                    <h5 class="beritaDate">Sabtu, 25 Nov 2023 20:00 WIB</h5>
+                    <h3 class="beritaTitle">Gokil! Puluhan Ribu Orang Ramaikan Pertamina Eco RunFest 2023</h3>
+                    <h5 class="beritaDate">Minggu, 26 Nov 2023 13:04 WIB</h5>
                 </div>
             </div>
             <div class="beritaCard">
@@ -255,11 +260,11 @@
                             <p class="containerDesc">01:45</p>
                         </div>
                     </div>
-                    <img class="beritaImage" src="./assets/Berita/1.jpeg" alt="Berita">
+                    <img class="beritaImage" src="./assets/Berita/4.jpeg" alt="Berita">
                 </div>
                 <div class="beritaText">
-                    <h3 class="beritaTitle">Sukses Finish Marathon di Jakarta, Osha Penyandang Autisme Beberkan Prosesnya</h3>
-                    <h5 class="beritaDate">Sabtu, 25 Nov 2023 20:00 WIB</h5>
+                    <h3 class="beritaTitle">Kelar Lari di CT Arsa Charity Fun Run, 'Recharge' Energi Nonton Maliq & D'essentials</h3>
+                    <h5 class="beritaDate">Sabtu, 18 Nov 2023 17:39 WIB</h5>
                 </div>
             </div>
             <div class="beritaCard">
@@ -275,11 +280,11 @@
                             <p class="containerDesc">01:45</p>
                         </div>
                     </div>
-                    <img class="beritaImage" src="./assets/Berita/1.jpeg" alt="Berita">
+                    <img class="beritaImage" src="./assets/Berita/5.jpeg" alt="Berita">
                 </div>
                 <div class="beritaText">
-                    <h3 class="beritaTitle">Sukses Finish Marathon di Jakarta, Osha Penyandang Autisme Beberkan Prosesnya</h3>
-                    <h5 class="beritaDate">Sabtu, 25 Nov 2023 20:00 WIB</h5>
+                    <h3 class="beritaTitle">CT Arsa Charity Fun Run 2023 Bertabur Emas</h3>
+                    <h5 class="beritaDate">Kamis, 16 Nov 2023 16:34 WIB</h5>
                 </div>
             </div>
             <div class="beritaCard">
@@ -295,17 +300,17 @@
                             <p class="containerDesc">01:45</p>
                         </div>
                     </div>
-                    <img class="beritaImage" src="./assets/Berita/1.jpeg" alt="Berita">
+                    <img class="beritaImage" src="./assets/Berita/6.jpeg" alt="Berita">
                 </div>
                 <div class="beritaText">
-                    <h3 class="beritaTitle">Sukses Finish Marathon di Jakarta, Osha Penyandang Autisme Beberkan Prosesnya</h3>
-                    <h5 class="beritaDate">Sabtu, 25 Nov 2023 20:00 WIB</h5>
+                    <h3 class="beritaTitle">BTN Jakarta Run 2023 Dorong dan Geliatkan Sport Tourism Jakarta</h3>
+                    <h5 class="beritaDate">Minggu, 12 Nov 2023 11:55 WIB</h5>
                 </div>
             </div>
            
         </div>
         <div class="buttonWrapper margin">
-            <button type="button" class="Button btn btn-lg" id = "aboutButton">Daftar Sekarang</a>
+            <button type="button" class="Button btn btn-lg" id = "aboutButton" onclick="window.open('https://www.detik.com/search/searchall?query=fun+run&siteid=2', '_blank')">Daftar Sekarang</a>
         </div>
         </div>
         
