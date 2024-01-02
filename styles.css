@@ -12,8 +12,6 @@
     width: 100vw;
     max-width: 100%;
     overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
 }
 .margin{
     margin-left: 9vw;
@@ -36,6 +34,8 @@
     box-shadow: 0px 18px 40px 12px rgba(255, 211, 103, 0.35);
     padding: 15px 25px;
     margin-top: 72px ;
+    border-color: transparent;
+    border-radius: 100px;
 }
 .Button:hover{
     cursor: pointer;
@@ -43,6 +43,8 @@
     cursor: pointer;
     background-color: #fc9c3c;
     box-shadow: 0px 18px 40px 12px rgba(252, 239, 224, 0.35);
+    border-color: transparent;
+    color: w;
 }
 a {
     color: inherit;
@@ -53,6 +55,7 @@ nav{
     top: 0;
     padding-top: 73px;
     background-color: transparent;
+    z-index: 1;
 }
 .navContainer{
     display: flex;
@@ -161,8 +164,107 @@ nav{
     margin: 0 auto;
 }
 .buttonWrapper{
-    width: calc(82vw);
+    width: 82vw;
     margin-top: 50px;
     display: flex;
     justify-content: center;
+}
+.sponsorsWrapper{
+    background: linear-gradient(249deg, #59FFB9 -31.85%, #326CFF 101.31%);
+    padding: 60px 0;
+}
+.sponsorCard{
+    width: 291px;
+    height: 144px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 291px;
+    min-height: 144px;
+}
+.sponsorLogo{
+    width: 216px;
+}
+.sponsorCardWrapper{
+    display: flex;
+    overflow: hidden;
+    gap: 30px;
+    margin-top: 30px;
+}
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+.slider{
+    display: flex;
+    animation: 35s slide infinite linear;
+    gap : 30px;
+}
+.Title{
+    width: 82vw;
+    color: white;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-align: center;
+}
+#galeri{
+    color: black;
+}
+.carouselWrapper{
+    margin-top: 193px;
+    margin-bottom: 193px;
+}
+.carousel{
+    width: 82vw;
+    z-index: 0;
+    margin-top: 30px;
+    
+}
+.carousel-indicators li {
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+.carousel-item>img{
+    aspect-ratio: 16/9;
+}
+li>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    aspect-ratio: 16/9;
+    filter: grayscale(100%);
+
+}
+.carousel-indicators {
+    margin-top: 23px;
+    width: 82vw;
+    display: flex;
+    position: static;
+    margin-left: 0;
+    justify-content: space-between;
+}
+.carousel-indicators:hover{
+    cursor: pointer;
+
+}
+.carousel-inner{
+    border-radius: 32px;
+}
+.active > img{
+    filter: none !important;
+}
+.ctrl{
+    margin: auto 52px;
+    height: 60px;
+    width: 60px;
 }
