@@ -317,6 +317,7 @@ li>img{
     object-fit: cover;
     border-radius: 20px;
     aspect-ratio: 16/9;
+    overflow: hidden;
 
 }
 .beritaTitle{
@@ -378,6 +379,7 @@ li>img{
 }
 .photoImage{
     height: 10px;
+
 }
 .containerDesc{
     margin-bottom: 0;
@@ -440,3 +442,22 @@ hr{
 html {
     scroll-behavior: smooth;
   }
+
+.c0{
+   visibility: hidden;
+}
+.c1{
+    visibility: hidden;
+ }
+.c2{
+    visibility: hidden;
+ }
+.c0Active{
+    visibility: visible;
+ }
+.c1Active{
+    visibility: visible;
+ }
+.c2Active{
+    visibility: visible;
+ }
